@@ -10,7 +10,7 @@ class CfgPatches
 	{
 		units[] = {};
 		weapons[] = {};
-		exileZcrashes_version = "v0.1 - 05/07/17";
+		exileZcrashes_version = "v0.2 - 05/07/17";
 		requiredVersion = 0.1;
 		requiredAddons[] = {"exile_client","exile_server_config","Ryanzombies","ryanzombiesfunctions","Ryanzombiesanims","Ryanzombiesfaces","exilez_mod"};
 	};
