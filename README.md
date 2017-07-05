@@ -6,6 +6,8 @@ This is a modification of Heli Crashes by Darth Rogue to allow it to work with E
 
 Classic DayZ Mod style crashsites
 
+Loot scattered around the wrecks
+
 Dynamic Zombie spawning
 
 ## Requirements
@@ -36,9 +38,9 @@ https://github.com/kuplion/ExileZ-Crashes
 
 4: Edit 'wreck_loot_positions.hpp' with any additional wrecks and loot positions.
 
-5: Add 'wreck_loot_positions.hpp' to your 'exile_server_config.pbo' and '#include "wreck_loot_positions.hpp"' to the top of 'class CfgBuildings' just after the bracket.
+5: Add 'wreck_loot_positions.hpp' to your 'exile_server_config.pbo' and '#include "wreck_loot_positions.hpp"' to the top of 'class CfgBuildings' just after the bracket (Line 28).
 
-6: Pack exilez_crashes.pbo with either PBO Manager 1.4b x64 (http://www.armaholic.com/page.php?id=16369) or Eliteness/MikeRo tools if you have them.
+6: Pack 'exilez_crashes.pbo' with either PBO Manager 1.4b x64 (http://www.armaholic.com/page.php?id=16369) or Eliteness/MikeRo tools if you have them.
 
 7: Repack 'exile_server_config.pbo'.
 
