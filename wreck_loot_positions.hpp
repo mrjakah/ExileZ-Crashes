@@ -4,7 +4,6 @@ ExileZ Crashes by [FPS]kuplion - Based on Heli Crashes by Darth Rogue
 
 */
 
-
 class Land_Wreck_BMP2_F
 {
 	table = "Radiation";
