@@ -32,19 +32,15 @@ https://github.com/kuplion/ExileZ-Crashes
 
 1: Edit the main settings in 'exilez_crashes\config.sqf'.
 
-2: Edit 'ExileClient_system_lootManager_thread_spawn.sqf' to add any additional wreck classes (Line 23).
+2: Add 'ExileClient_system_lootManager_thread_spawn.sqf' to your CfgExileCustomCode.
 
-3: Add 'ExileClient_system_lootManager_thread_spawn.sqf' to your CfgExileCustomCode.
+3: Edit 'exilez_crashes\wrecks\wreckLootPositions.hpp' with any additional wrecks and loot positions.
 
-4: Edit 'wreck_loot_positions.hpp' with any additional wrecks and loot positions.
+4: Make sure too add those wrecks to the config file ('exilez_crashes\config.sqf').
 
-5: Add 'wreck_loot_positions.hpp' to your 'exile_server_config.pbo' and '#include "wreck_loot_positions.hpp"' to the top of 'class CfgBuildings' just after the bracket (Line 28).
+5: Pack 'exilez_crashes.pbo' with either PBO Manager 1.4b x64 (http://www.armaholic.com/page.php?id=16369) or Eliteness/MikeRo tools if you have them.
 
-6: Pack 'exilez_crashes.pbo' with either PBO Manager 1.4b x64 (http://www.armaholic.com/page.php?id=16369) or Eliteness/MikeRo tools if you have them.
-
-7: Repack 'exile_server_config.pbo'.
-
-8: Place 'exilez_crashes.pbo' in your '@ExileServer\addons\' folder.
+6: Place 'exilez_crashes.pbo' in your '@ExileServer\addons\' folder.
 
 ## Donations
 

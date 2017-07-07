@@ -21,17 +21,27 @@ for "_i" from 1 to EZC_crashNum do
 	_wreck = selectRandom _wrecks;
 	_heli = _wreck createVehicle [0,0,0];
 	
-	_effect = "test_EmptyObjectForSmoke";
-	
-	if(EZC_crashOnFire) then 
+	if (EZC_crashEffects) then
 	{
-		_effect = "test_EmptyObjectForFireBig";	
+		// Pick the effect
+		if (EZC_crashOnFire) then 
+		{
+			_effect = "test_EmptyObjectForFireBig";	
+		}
+		else
+		{
+			_effect = "test_EmptyObjectForSmoke";
+		};
+		
+		// Add the effect
+		_heliEffect = _effect createVehicle (position _heli);
+		_heliEffect attachto [_heli, [0,0,-1]];
 	};
 	
-	_heliEffect = _effect createVehicle (position _heli);
-	_heliEffect attachto [_heli, [0,0,-1]];
+	// Place the wreck
 	_heli setDir (random 360);
 	_heli setPos _crashPOS;
+	_heli setVectorUp surfaceNormal position _heli;
 	
 	if (EZC_ExtendedLogging) then
 	{
@@ -76,6 +86,6 @@ for "_i" from 1 to EZC_crashNum do
 		_marker2 setMarkerShape "ICON";
 		_marker2 setMarkerColor "ColorWhite";
 		_marker2 setMarkerType "KIA";
-		_marker2 setMarkerText " Heli Crash";
+		_marker2 setMarkerText " Crash Site";
 	};
 };

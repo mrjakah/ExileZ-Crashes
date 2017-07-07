@@ -5,8 +5,9 @@ ExileZ Crashes by [FPS]kuplion - Based on Heli Crashes by Darth Rogue
 */
 
 // Logging Settings
-EZC_Debug						= false;			// Debug messages.
-EZC_ExtendedLogging				= true;				// Slightly more information in logs.
+EZC_Debug						= false;			// Debug messages
+EZC_ExtendedLogging				= true;				// Slightly more information in logs
+EZC_showOnMap					= false;			// Show crashes on the map
 
 // Global Settings
 EZC_crashNum					= 15;				// How many crashes?
@@ -18,6 +19,7 @@ EZC_waterMode					= 0;				// Water mode 0: cannot be in water , 1: Can either be
 EZC_landMode					= 0;				// 0: Does not have to be at a shore , 1: Must be at a shore
 
 // Crash settings
+EZC_crashEffects				= true;				// Effects on the wreck?
 EZC_crashOnFire					= false;			// Fire or just smoke?
 
 // Crash Zombies Config
@@ -44,7 +46,6 @@ EZC_wrecks						=	[
 
 
 // Trigger settings
-EZC_showOnMap					= false;			// Show crashes on the map
 EZC_triggerRadius				= 25;				// Radius in meters
 EZC_activationDelay				= 15;				// Activation delay in seconds
 									
